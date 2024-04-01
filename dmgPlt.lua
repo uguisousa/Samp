@@ -1,8 +1,8 @@
-function onPlayerDamage(attacker, weapon, bodypart, loss)
+function Damgeinfo(attacker, weapon, bodypart, loss)
     local attackerName = getPlayerName(attacker)
     local weaponName = getWeaponNameFromID(weapon)
     local bodypartName = getBodyPartName(bodypart)
     
-    outputChatBox(" " .. attackerName .. "  " .. weaponName .. "  " .. bodypartName .. ". Perdeu " .. loss .. " de vida.", source, 255, 0, 0)
+    outputChatBox(" " .. attackerName .. "  " .. weaponName .. "  " .. bodypartName .. ".  " .. loss .. " .", source, 255, 0, 0)
 end
-addEventHandler("onPlayerDamage", root, onPlayerDamage)
+addEventHandler("Damgeinfo", root, Damgeinfo)
